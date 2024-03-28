@@ -1,0 +1,61 @@
+/*So that the last row of buttons is not 
+hugging the very bottom of the screen.
+Top positioning will vary based on how many
+rows there are.
+Numbers roughly follow the equation for (x + 1) rows: y = 34.29x + 32.84*/
+
+.nature-invisible-box {
+    background: rgba(0, 0, 0, 0);
+    top: 787.22%;
+    height: 1%;
+    width: 100%;
+    position: absolute;
+}
+
+.food-invisible-box {
+    background: rgba(0, 0, 0, 0);
+    top: 855.8%;
+    height: 1%;
+    width: 100%;
+    position: absolute;
+}
+
+.object-invisible-box {
+    background: rgba(0, 0, 0, 0);
+    top: 1130.12%;
+    height: 1%;
+    width: 100%;
+    position: absolute;
+}
+
+.places-invisible-box {
+    background: rgba(0, 0, 0, 0);
+    top: 410.03%;
+    height: 1%;
+    width: 100%;
+    position: absolute;
+  }
+
+.transportation-invisible-box {
+    background: rgba(0, 0, 0, 0);
+    top: 410.03%;
+    height: 1%;
+    width: 100%;
+    position: absolute;
+}
+
+.people-invisible-box {
+    background: rgba(0, 0, 0, 0);
+    top: 410.03%;
+    height: 1%;
+    width: 100%;
+    position: absolute;
+}
+
+.activity-invisible-box {
+    background: rgba(0, 0, 0, 0);
+    top: 410.03%;
+    height: 1%;
+    width: 100%;
+    position: absolute;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Places</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie Flower"/>
+  <link rel="stylesheet" href="../css/Pictures.css"/>
+  <link rel="stylesheet" href="../css/PicturesMobile.css"/>
+  <link rel="stylesheet" href="../css/InvisibleBoxes.css"/>
+</head>
+
+<body>
+    <div class="header-bar">
+      <a href="./HomeScreen.html">
+        <button class="home-button">
+          <img class="home-icon-1" src="../images/home icon.webp" />
+          <div class="home-button-text">Home</div>
+      </button>
+      </a>
+      <div class="vocalizer">Vocalizer</div>
+    </div>
+    <div class="select-image">Select an image</div>
+    <div class="category-button-row" id="c-row-1">
+      <a href="./FoodPictures.html">
+        <button class="category-button">Food</button>
+      </a>
+      <a href="./PlacesPictures.html">
+        <button class="selected-category-button">Places</button>
+      </a>
+      <a href="./NaturePictures.html">
+        <button class="category-button">Nature</button>
+      </a>
+      <a href="./ObjectPictures.html">
+        <button class="category-button">Objects</button>
+      </a>
+    </div>
+    <div class="category-button-row" id="c-row-2">
+      <a href="./TransportationPictures.html">
+        <button class="category-button">Transport</button>
+      </a>
+      <a href="./ActivitiesPictures.html">
+        <button class="category-button">Activities</button>
+      </a>
+      <a href="./PeoplePictures.html">
+        <button class="category-button">People</button>
+      </a>
+    </div>
+    <button id="Airport" onclick="outputVoice(id)"></button>
+    <button id="Backyard" onclick="outputVoice(id)"></button>
+    <button id="Bathroom" onclick="outputVoice(id)"></button>
+    <button id="Beach" onclick="outputVoice(id)"></button>
+    <button id="Bedroom" onclick="outputVoice(id)"></button>
+    <button id="Campground" onclick="outputVoice(id)"></button>
+    <button id="Carnival" onclick="outputVoice(id)"></button>
+    <button id="Castle" onclick="outputVoice(id)"></button>
+    <button id="City" onclick="outputVoice(id)"></button>
+    <button id="Classroom" onclick="outputVoice(id)"></button>
+    <button id="Closet" onclick="outputVoice(id)"></button>
+    <button id="Desert" onclick="outputVoice(id)"></button>
+    <button id="Doctor's Office" onclick="outputVoice(id)"></button>
+    <button id="Farm" onclick="outputVoice(id)"></button>
+    <button id="Forest" onclick="outputVoice(id)"></button>
+    <button id="Front Yard" onclick="outputVoice(id)"></button>
+    <button id="Garage" onclick="outputVoice(id)"></button>
+    <button id="Garden" onclick="outputVoice(id)"></button>
+    <button id="Grocery Store" onclick="outputVoice(id)"></button>
+    <button id="Home" onclick="outputVoice(id)"></button>
+    <button id="Hospital" onclick="outputVoice(id)"></button>
+    <button id="Igloo" onclick="outputVoice(id)"></button>
+    <button id="Jungle" onclick="outputVoice(id)"></button>
+    <button id="Kitchen" onclick="outputVoice(id)"></button>
+    <button id="Library" onclick="outputVoice(id)"></button>
+    <button id="Lighthouse" onclick="outputVoice(id)"></button>
+    <button id="Living Room" onclick="outputVoice(id)"></button>
+    <button id="Mall" onclick="outputVoice(id)"></button>
+    <button id="Museum" onclick="outputVoice(id)"></button>
+    <button id="Office" onclick="outputVoice(id)"></button>
+    <button id="Outside" onclick="outputVoice(id)"></button>
+    <button id="Park" onclick="outputVoice(id)"></button>
+    <button id="Parking Lot" onclick="outputVoice(id)"></button>
+    <button id="Playground" onclick="outputVoice(id)"></button>
+    <button id="Porch" onclick="outputVoice(id)"></button>
+    <button id="Restaurant" onclick="outputVoice(id)"></button>
+    <button id="School" onclick="outputVoice(id)"></button>
+    <button id="Stadium" onclick="outputVoice(id)"></button>
+    <button id="Store" onclick="outputVoice(id)"></button>
+    <button id="Zoo" onclick="outputVoice(id)"></button>
+    <div class="places-invisible-box"></div>
+
+    <script src="../javascript/ImageVoice.js"></script>
+    <script src="../javascript/LoadPictures.js"></script>
+
+</body>
+
+</html>
