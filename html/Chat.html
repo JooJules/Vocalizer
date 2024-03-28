@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Capstone</title>
+  <link rel="stylesheet" href="../css/Planner.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie Flower"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header-bar">
+    <a href="./HomeScreen.html" class="home-button">
+      <img class="home-icon-1" src="../images/home icon.webp" />
+      <div class="home-button-text">Home</div>
+    </a>
+    <div class="vocalizer">Vocalizer</div>
+  </div>
+
+  <div class="planner">
+    <div class="message-container" id="message-container">
+
+      <div class="loading-wrapper" id= "loading-wrapper">
+        <div class="loading-circle" id="loading-circle"></div>
+        <div class="loading-text">Loading...</div>
+      </div>
+
+    <!--   <div class="loading-circle" id = "loading-circle"> 
+        <ins>Loading...</ins> 
+      </div> -->
+
+      
+
+
+
+    </div> <!-- Container for messages -->
+    <div class="submit-form">
+      <div class="input">
+        <div class="textarea-container">
+          <textarea name="input" id="input" cols="40" rows="3" placeholder="Enter a task to see the steps"></textarea>
+          <button id="btn" class="arrow-button">
+            <img src="../images/Arrow.png" alt="Submit">
+          </button>
+        </div>
+      </div>
+      
+    </div>
+
+    <!--loading bar-->
+    <div class="loading-indicator" id="loading-indicator"> 
+      <div class="progress-bar" id="progress-bar"> Loading...</div>
+    </div>
+  </div>
+
+  
+
+  <script src="../js/chat.js"></script> 
+  <script src="../js/imageVoice.js"></script>
+
+</body>
+</html>
