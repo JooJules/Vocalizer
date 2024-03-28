@@ -1,0 +1,569 @@
+
+
+/*A lot of the css was moved to the button of the page for specific screen sizes, but there is still some generic CSS*/
+
+
+html {           /*css for the background of the page */ 
+  background-color: #b7946a;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {  
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.header-bar {    /*css for the home bar at the top of the page */
+  background: #4e4d49;
+  width: 100%;
+  height: 22.5%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.home-button {  /*css for the home button */
+  background: #d5cfbf;
+  border-radius: 100px;
+  width: 14.2%;
+  height: 31.5%;
+  position: absolute;
+  left: 2.3%;
+  top: 32.5%;
+  box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.75);;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-button-text { /*css for the home button text*/
+  color: #000000;
+  text-align: left;
+  font-family: 'Inter-Regular', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  left: 45%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  -webkit-text-stroke: 1px #000000;
+}
+
+.home-icon-1 { /*css for the home button Icon*/
+  width: 24%;
+  height: 81%;
+  left: 10%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.vocalizer { /*css for the vocalizer at top of the page */
+  color: #ffffff;
+  text-align: center;
+  font-family: "Indie Flower";
+  font-size: 96px;
+  font-weight: 400;
+  position: absolute;
+  left: 42%;
+  top: 21.5%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start
+}
+
+
+
+
+
+
+
+
+
+
+
+/* hover transitions */
+.keyboard-button:hover{
+  transition: 0.2s ease-in;
+  background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+.home-button:hover {
+  transition: 0.2s ease-in;
+  background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+.clear:hover{
+  transition: 0.2s ease-in;
+  background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+
+.speakButton:hover{
+  transition: 0.2s ease-in;
+  background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+
+
+
+
+ 
+
+
+
+    .virtualkeyboard { /*css for the keybored \. This is the box that contains the keybored, but some of it still effects the keys */
+      
+      
+      z-index: 1000; 
+       
+      position: absolute;
+      left: 50%;
+      top: 75%;
+      transform: translate(-50%, -50%);
+      display: block; 
+      background-color: transparent;
+      border: none;
+
+      
+    }
+
+.clear-icon{/*css for clear button image */
+  object-fit: cover;
+
+  z-index: -1000;
+  pointer-events: none;
+}
+.speak-icon-1{ /*css for speak button image. The button to play to the user what they typed in */
+ z-index: -1000;
+ background-color: transparent;
+  object-fit: cover;
+  width:40%;
+  pointer-events: none;
+}
+    .speakButton { /*css for speak button */
+      position: absolute; 
+     
+      left: 32.48%; 
+      top: 19.80%;
+      /* top: 20%; left: 72.5%;*/
+      transform: translate(-50%,-50%)
+      
+      
+      }
+
+.textInput{ /*css for textbox that the user types into */
+  position: absolute; 
+  left: 50%; 
+  top: 20%;
+  height:5%;
+width:40%;
+
+max-width: 40%;
+
+
+
+}
+
+
+
+.keyboard-button { /*css for keys on keybored. This also effcts space, backspace, and capslock But I have seperate css for them too. */
+  position: relative;
+  text-align: center !important;
+  margin: .25%; 
+  box-sizing: border-box; 
+  vertical-align: middle;
+  font-size: 1.2em;
+  padding:  1em;
+ 
+  display: inline-block; 
+  text-align: center;
+
+}
+
+
+
+.special-key { /*css for space, capslock, and backspace. Use !important if the css isn't effecting it */
+  position: relative;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin: .25%;
+  
+  width: 25%; 
+ 
+  padding: 0.5em;
+}
+
+.keyboard-button.pressed { /*css for color of when lighitng up virtual keybored if the user use's their real keybored */
+  background-color: rgb(207, 207, 201); 
+  color: black; 
+}
+
+
+
+
+.clear{ /*css for clear button. This button clears the textbox */
+  transform: translate(-50%,-50%);
+  position: absolute;
+  z-index: 1000;
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {  /*css for phone's, specifically in vertical mode. Landscape is at the end */
+  .clear-icon{
+    align-items: center;
+    width: 120% !important;
+    
+  }
+  .clear{
+    height: 50px!important;
+    width: 65px!important;
+    left: 80%; 
+    top: 30%;
+     font-size: 1.2em;
+     border-radius: 10px; 
+   }
+  .virtualkeyboard {
+
+
+    display: grid;
+    grid-template-columns:  minmax(4, 1fr); 
+    
+    grid-auto-rows: minmax(50px, auto);
+
+    width: 400%;
+    height:200%;
+    right: 100%;
+    top: 40%;
+    transform: translate(5%, 5%);
+    font-size:.6em;
+    margin: 0%;
+    padding: 0%;
+    max-width: 150%;
+    max-height: 100%;
+    flex-wrap: wrap;
+    
+  }
+
+  .special-key {
+    
+    right: 100% !important;
+    top: 0%; 
+    width: 10%!important; 
+    height: 6.5%!important; 
+    font-size: 0.6em!important; 
+    padding: 0%!important; 
+    transform: translate(5%, 5%);
+  
+   
+    
+  }
+
+  .textInput {
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    font-size:.8em;
+  }
+  .speakButton{
+    height: 50px!important;
+    width: 65px!important;
+    left: 20% !important; 
+    top: 30%;
+     font-size: .85em;
+     padding: .95%; 
+     border-radius: 10px;
+  }
+  .keyboard-button{
+    border-radius: 10px;
+    right: 30% !important; 
+    padding:  0%;
+    width: 5%;
+    height: 8%;
+    border-radius: 10px; 
+    font-size: 0.6em !important; 
+    margin: 0%;
+    overflow-x: auto !important;
+    max-width: 300%;
+  }
+
+  .home-button-text{
+    font-size: 0pt;
+  }
+  .home-icon-1{
+   left:25%;
+    width: 50%;
+    height: 70%;
+    object-fit:contain;
+
+  }
+  
+.vocalizer{
+  font-size: 3.0em;
+ left:20%;
+ top: 32.5% !important;
+}
+
+
+.header-bar{
+  width: 200%;
+  overflow-x: auto;
+}
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {  /*css for screens in between mobile and laptop */
+  .clear-icon{
+    width:130%;
+    align-items: center;
+    
+  }
+  .clear{
+    border-radius: 10px; 
+    height:5.5%;
+    width: 5.2%;
+    left: 73.5%; 
+    top: 30%;
+     font-size: 1.2em;
+   }
+  .virtualkeyboard {
+    right: 50%;
+    top: 35%;
+    transform: translate(5%, 5%);
+    font-size:1.0em;
+    width: 80%;
+    height: auto;
+    background-size: contain;
+    display: flex;
+    grid-template-columns:  minmax(5, 1fr); 
+    
+    grid-auto-rows: minmax(50px, auto);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+   
+  }
+
+  .keyboard-button{
+    flex: 0 0 calc(30% - 30px); 
+    padding: 22px;
+    width: 7%; /* width was 5%*/
+    height: 8% ;
+right:45%;
+top:15%;
+font-size: 0.9em;
+overflow-x: auto !important;
+border-radius: 10px; 
+
+  }
+.speak-icon-1{
+align-items: center;
+width:110%
+
+}
+  .special-key {
+    
+    right:45%;
+    top: 30%; 
+    width: 15%;
+    transform: translate(5%, 5%);
+    font-size:0.8em;
+    padding: 2% !important;
+    height: 10% !important;
+  }
+
+  .textInput {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    font-size:1.0em;
+  }
+  .speakButton {
+    border-radius: 10px; 
+    height:5.5%;
+    width: 5.2%;
+    left: 79.1%; 
+    top: 30%;
+     font-size: 1.2em;
+  }
+
+
+  .home-button-text{
+    font-size: 0pt;
+  }
+  .home-icon-1{
+   left:25%;
+    width: 50%;
+    height: 70%;
+    object-fit:contain;
+
+  }
+}
+
+
+
+@media (min-width: 1025px) { /*css for laptop/computer screens*/
+  .clear-icon{
+    width:50px;
+   
+    align-items: center;
+
+  }
+ .clear{
+  border-radius: 10px; 
+  height:5.5%;
+  width: 5.2%;
+  left: 68%; 
+  
+  top: 30%;
+   font-size: 1.2em;
+ }
+  .virtualkeyboard {
+    left: 33%;
+    top: 35%;
+    transform: translate(5%, 5%);
+    font-size:1.2em;
+    display: flex;
+    grid-template-columns:  minmax(5, 1fr); 
+   overflow-x: visible;
+    grid-auto-rows: minmax(50px, auto);
+   background-size: contain;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 10px; 
+  }
+
+  .special-key {
+    
+    right:36%;
+    top: 80%; 
+    width: 170px!important;
+    font: size 1.2em !important;
+  }
+
+  .textInput {
+    left: 45%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    font-size:1.2em;
+  }
+  .speakButton {
+    border-radius: 10px; 
+    height:5.5%;
+    width: 5.2%;
+    left: 73.5%; 
+    top: 30%;
+     font-size: 1.2em;
+  }
+  .speak-icon-1{
+    align-items: center;
+    width:50%
+  }
+  .keyboard-button{
+    flex: 0 0 calc(40% - 35px); 
+    padding: 25px;
+    border-radius: 10px; 
+    width: 6%; 
+    height: 4% !important;
+right:25%;
+top:60%;
+font-size: 118.5%;
+overflow-x: auto;
+
+
+  }
+
+
+  .home-button-text {
+    color: #000000;
+    text-align: left;
+    font-family: 'Inter-Regular', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    left: 45%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    -webkit-text-stroke: 1px #000000;
+    transform: translate(-10%, 0%);
+  }
+  
+  .home-icon-1 {
+    width: 24%;
+    height: 81%;
+    left: 10%;
+    position: absolute;
+    object-fit:contain;
+    
+  }
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+ 
+  overflow-x: hidden;
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {  /*css for mobile devices in landscape mode */
+  .textInput{
+    top:28%
+  }
+ .virtualkeyboard{
+  top:30%
+ }
+  .clear-icon{
+    align-items: center;
+    width: 100% !important;
+   
+    
+  }
+  .clear{
+   
+    width: 7%!important;
+    left: 75%; 
+    top: 28%;
+   
+     border-radius: 10px; 
+   }
+
+
+  .speakButton{
+    width: 8%;
+    left:82.5%;
+    top:28%;
+  }
+  .speak-icon-1{
+    width: 75%;
+    align-items: center;
+  }
+   
+ .vocalizer{
+   font-size: 3.0em;
+  left:20%;
+  top: 15% !important;
+ }
+  .header-bar{
+    width: 200%;
+   overflow-x: auto;
+  
+  }
+  .home-button{
+    width:5%;
+  }
+
+  
+  }
+
+
