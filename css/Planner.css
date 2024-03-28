@@ -1,0 +1,343 @@
+html { 
+  background-color: #b7946a; 
+  height: 100%; 
+  width: 100%; 
+  margin: 0; 
+}
+
+body { 
+  height: 100%; 
+  width: 100%; 
+  margin: 0; 
+   overflow: hidden;  /* Prevent scrolling */
+  
+}
+
+.header-bar { 
+  background: #4e4d49; 
+  width: 100%; 
+  height: 22.5%; 
+  position: absolute; 
+
+  top: 0%; 
+  left: 0%; 
+}
+
+/* .headerBackground{
+  background: #4e4d49;
+  top: -30%;
+  width: 30%;
+} */
+
+.home-button {
+  background: #d5cfbf;
+  border-radius: 100px;
+  width: 14.2%;
+  height: 31.5%;
+  position: absolute;
+  left: 2.3%;
+  top: 50%;
+  box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.75);;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transform: translate(-10%, -50%);
+}
+
+.home-button-text {
+  color: #000000;
+  text-align: left;
+  font-family: 'Inter-Regular', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  left: 45%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  -webkit-text-stroke: 1px #000000;
+  transform: translate(-10%, 0%);
+}
+
+.home-icon-1 {
+  width: 24%;
+  height: 81%;
+  left: 10%;
+  position: absolute;
+  object-fit: contain; /*home image fits in the box without getting cut off*/
+}
+
+
+.home-button:hover {
+  transition: 0.2s ease-in;
+  background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+
+.vocalizer {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Indie Flower";
+  font-size: 96px;
+  font-weight: 400;
+  position: absolute;
+  left: 50%;
+  top: 21.5%;
+  transform: translateX(-50%);
+}
+
+
+.input {
+  width: 90%;
+  max-width: 20000px;
+  position: absolute;
+  bottom: 7%; /* Adjust the position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.textarea-container {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  
+}
+
+.textarea-container textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  font-size: 18px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-image: url('../images/Arrow.png');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) center; /* Adjust the position of the arrow */
+  background-size: 30px; /* Adjust the size of the arrow */
+  width: calc(100% - 0px);
+  border-radius: 25px;
+}
+
+.arrow-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: .5%;
+   opacity: 0;  /* Make the button invisible */
+}
+
+
+.arrow-button img {
+  width: 100%; /* Ensure the image takes the full button space */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+
+
+.message-container {
+  background-color: white;
+  position: absolute;
+  width: 88.5%;
+  max-width: 20000px;
+  height: 50%;
+  top: 55%;
+  left: 50%;
+  top: calc(50% + 20px);
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  overflow-y: auto;
+  border-radius: 25px
+}
+
+.message-box {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  /* width: auto; */ /* Set width to auto to allow it to expand based on content */
+  max-width: 98%; /* Set maximum width to ensure it doesn't extend beyond container */
+}
+
+.user-message {
+  background-color: rgb(46, 213, 243);
+  text-align: left;
+  border-radius: 25px;
+}
+
+.bot-response {
+  background-color: rgb(104, 230, 104);
+  text-align: left;
+  border-radius: 25px;
+}
+
+
+
+
+.loading-wrapper {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.loading-circle {
+  border: 16px solid #4e4d49; /* Light grey */
+  border-top: 16px solid #b7946a; 
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  overflow: hidden;
+  display: inline-block; /* Ensure the circle and text are inline */
+}
+
+.loading-text {
+  position: relative; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+/*smaller screens*/
+@media (max-width: 800px) {
+
+  body {
+    touch-action: manipulation; /* Disable pinch-to-zoom */
+  }
+
+
+  .home-button-text {
+    font-size: 0pt;
+  }
+  .home-icon-1 {
+    left: 25%;
+    object-fit:contain;
+    width: 50%;
+    height: 70%;
+  }
+
+  .vocalizer {
+    left: 55%; 
+    transform: translateX(-50%);
+    font-size: 5.0em; 
+  }
+
+  .input {
+    width: 92%;
+    bottom: 5%;
+    overflow: hidden;
+  }
+
+  .message-container {
+    width: 85%;
+  }
+
+
+
+  .loading-circle {
+    width: 30px;
+    height: 30px;
+    top: 43%;
+    left: 43%;
+  }
+
+
+
+
+}
+
+.loading-indicator {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  /* background-color: rgb(183, 148, 106); */
+  border-radius: 8px;
+  z-index: 1000;
+  color: rgb(0, 0, 0);
+  font-size: 34px;
+  text-align: center; /* Center text content */
+  width: 100px; /* Set a fixed width for the loading indicator */
+}
+
+
+.progress-bar {
+  width: 50%; /* Initial width set to 0% */
+  height: 100%;
+  z-index: 1000;
+  background-color: #4CAF50; /* Green color for the progress bar */
+  border: #000000;
+}
+
+/* keep speaker button and step on same line*/
+.step-container {
+  display: flex;
+  align-items: center; 
+}
+
+
+
+
+/* landscape on phone*/
+
+@media (max-width: 900px) and (orientation: landscape) {
+  .vocalizer{
+    font-size: 3.0em;
+    left:50%;
+    top: 15% !important;
+  }
+
+  
+  .home-button{
+    width:5%;
+    
+  }
+
+
+  .textarea-container textarea {
+    bottom: 10%;
+    width: 100%;
+  }
+
+  .message-container{
+    width: 90%;
+    height: 30%;
+    bottom: 100%;
+    top: 45%;
+    font-size: 1.0em;
+  }
+
+  .arrow-button{
+    height: 20%;
+    width: 10%;
+  }
+
+
+  .loading-circle {
+    width: 10px;
+    height: 10px;
+    top: 35%;
+    left: 47%;
+  }
+
+}
+
+
+
