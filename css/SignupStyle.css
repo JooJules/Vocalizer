@@ -1,0 +1,49 @@
+body {
+    background-color: #B7946A;
+}
+title {
+    text-align: center;
+    color: #FFFFFF;
+}
+h1 {
+    color: #000000;
+    text-align:center;
+    font-family: 'Indie Flower';
+    font-size: 28px;
+}
+/* At this point it's aligned decently, will pass over this again*/
+.box {
+    align-content: center;
+    width: 500px;
+    height: 550px;
+    background-color: #D6CFBF;
+    border: 2px solid black;
+    margin: auto;
+    text-align: center;
+}
+/*Just mostly test stuff to see if buttons work, will be adjusted*/
+button {
+    background-color: #725E45;
+    padding: 10px 14px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    align-content: center;
+    width: 30%;
+}
+/*something is wrong with either this or the label*/
+input[type=text], input[type=password]{
+    width: 90%;
+    margin: 10px 0;
+    border-radius: 3px;
+    padding: 12px 14px;
+    box-sizing: border-box;
+}
+/*The display is pretty bad, and I need to fix this, hopefully by tomorrow it'll be fixed*/
+label{
+    text-align: left;
+    align-items: left; 
+    font-size: 25px;
+    display: block;
+    position: relative;
+}
