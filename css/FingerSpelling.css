@@ -1,0 +1,59 @@
+body {
+    background-color: #B7946A;
+}
+
+.top-box {
+    background: #4e4d49;
+    width: 1429px;
+    height: 100px;
+    position: absolute;
+    inset: 0;
+}
+
+#title {
+    color: #ffffff;
+    font-family: "Indie Flower";
+    font-size: 50px;
+    font-weight: 400;
+    position: absolute;
+    left: 425px;
+    width: 592px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#back-button {
+    background: #d5cfbf;
+    border-radius: 100px;
+    height: 66px;
+    width: 240px;
+    position: relative;
+    top: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#back-button:hover {
+    background: #d5cfbf88;
+}
+
+img {
+    width: 350px;
+    height: 380px;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+
+.instructions {
+    background: #ffffff;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    height: 160px;
+    width: 500px;
+    border-style: solid;
+    border-width: 1px;
+}
