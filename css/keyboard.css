@@ -194,7 +194,8 @@ max-width: 40%;
 }
 
 .keyboard-button.pressed { /*css for color of when lighitng up virtual keybored if the user use's their real keybored */
-  background-color: rgb(207, 207, 201); 
+ /* background-color: rgb(207, 207, 201);  b7946a         725e45         d3a46c*/
+ background-color: rgb(161, 161, 161);
   color: black; 
 }
 
