@@ -26,7 +26,7 @@ btn.addEventListener('click', async () => {
     // Update progress bar to indicate loading
     updateProgressBar(20); 
     console.log('Loading indicator displayed');
-
+    //const CHAT_KEY = process.env.REACT_APP_API_KEY;
     // ChatGPT text response
     try {
         const response = await fetch('https://api.openai.com/v1/chat/completions', {
@@ -34,7 +34,10 @@ btn.addEventListener('click', async () => {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': 'Bearer API_KEY', // Replace with the ChatGPT API key
+                //'Authorization': 'Bearer ${CHAT_KEY}',
+                
             },
+            
             body: JSON.stringify({
                 model: 'gpt-3.5-turbo',
                 messages: [{ role: 'user', content: "Can you show me step by step how to complete the following task: " + inputText }],
@@ -42,6 +45,8 @@ btn.addEventListener('click', async () => {
             })
         });
         updateProgressBar(50);
+       
+        console.log('${process.env.CHAT_API_KEY}');
 
         if (!response.ok) {
             throw new Error('Server error');
@@ -66,7 +71,7 @@ btn.addEventListener('click', async () => {
                     speakButton.addEventListener('click', () => {
                         outputVoice(step);
                     });
-
+ 
                     // Containers for Image generation  
                     const stepContainer = document.createElement('div');
                     stepContainer.classList.add('step-container');
@@ -77,7 +82,7 @@ btn.addEventListener('click', async () => {
 
                     const imageContainer = document.createElement('div');
                     imageContainer.classList.add('image-container');
-
+/* 
                     if (/^\d+\./.test(step.trim())) {
                         try {
                             const imageUrl = await generateImage(step);
@@ -94,7 +99,7 @@ btn.addEventListener('click', async () => {
                         } catch (imageError) {
                             console.error('Error generating image:', imageError);
                         }
-                    }
+                    }  */
 
                     stepContainer.appendChild(stepElement);
                     stepContainer.appendChild(speakButton);
@@ -178,34 +183,25 @@ function handleKeyboardVisibility() {
 handleKeyboardVisibility();
 
 
-/* 
-// Prevent scrolling above the header
-window.addEventListener('scroll', function() {
-  var headerHeight = document.querySelector('.header-bar').offsetHeight;
-  if (window.scrollY < headerHeight) {
-      window.scrollTo(0, headerHeight);
-  }
-}); */
 
 
 
-/* const systhesis = window.speechSynthesis;
-const utterance = new SpeechSynthesisUtterance ('Hello');
+const synthesis = window.speechSynthesis;
+const newUtterance = new SpeechSynthesisUtterance('Hello');
 let isPlaying = false;
 
-this.systhesis.speak(utterance);
+synthesis.speak(newUtterance);
 isPlaying = true;
-*/
 
-//stops chrome from stopping after 14 sec
-var synthesisInerval = setInterval(() => {
-    if (!isPlaying){
-            clearInterval(synthesisInterval);
-    }else{
-        systhesis.resume();
-    }
+// somehow chrome stops after 14 seconds, so resume from there
+var synthesisInterval = setInterval(() => {
+    if (!isPlaying) {
+        clearInterval(synthesisInterval);
+    } else {
+        synthesis.resume();
+    } 
 }, 14000);
 
-utterance.onend = () => {
+newUtterance.onend = () => {
     isPlaying = false;
-} 
+}
