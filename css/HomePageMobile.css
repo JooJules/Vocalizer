@@ -10,14 +10,28 @@
         color: #ffffff;
         text-align: center;
         font-family: "Indie Flower";
-        font-size: 74px !important;
+        font-size: 400%; /*96px*/
         font-weight: 400;
         position: absolute;
         width: 20%;
         height: 20%;
-        left: 36%;
-        margin-left: 2%;
-        top: 21.5%;
+        right: 2.5%;
+        top: 32.5%;
+      }
+      
+      .page-title {
+        color: #ffffff;
+        text-align: center;
+        font-family: "Indie Flower";
+        font-size: 600%; /*96px*/
+        font-weight: 400;
+        position: absolute;
+        width: 40%;
+        height: 20%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 21.5%; 
       }
 
     .logout-button {

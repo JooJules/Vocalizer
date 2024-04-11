@@ -61,18 +61,32 @@ body {
   object-fit: cover;
 }
 
-.vocalizer { /*css for the vocalizer at top of the page */
+.vocalizer {
   color: #ffffff;
   text-align: center;
   font-family: "Indie Flower";
-  font-size: 96px;
+  font-size: 400%; /*96px*/
   font-weight: 400;
   position: absolute;
-  left: 42%;
-  top: 21.5%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start
+  width: 20%;
+  height: 20%;
+  right: 2.5%;
+  top: 32.5%;
+}
+
+.page-title {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Indie Flower";
+  font-size: 600%; /*96px*/
+  font-weight: 400;
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 21.5%; 
 }
 
 
