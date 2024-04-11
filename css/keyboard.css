@@ -320,11 +320,16 @@ max-width: 40%;
 
   }
   
-.vocalizer{
-  font-size: 3.0em;
- left:20%;
- top: 32.5% !important;
-}
+  .page-title{
+    font-size: 3.0em;
+   /* left:1%; */
+   left: -33%;
+   top: 32.5% !important;
+  }
+  
+  .vocalizer{
+    font-size: 0pt;
+  }
 
 
 .header-bar{
@@ -564,10 +569,13 @@ body {
     align-items: center;
   }
    
- .vocalizer{
+ .page-title{
    font-size: 3.0em;
-  left:20%;
+  left:-45%;
   top: 15% !important;
+ }
+ .vocalizer{
+  font-size: 0pt;
  }
   .header-bar{
     width: 200%;
@@ -580,5 +588,3 @@ body {
 
   
   }
-
-
