@@ -75,7 +75,7 @@
         align-items: center;
         justify-content: center;
         -webkit-text-stroke-color: #000000;
-        text-align: left;
+        text-align: center;
         font-family: "Inter-Regular", sans-serif;
         font-size: 48px !important;
         font-weight: 400;
@@ -122,7 +122,7 @@
         color: #ffffff;
         text-align: center;
         font-family: "Indie Flower";
-        font-size: 74px !important;
+        font-size: 0px !important;
         font-weight: 400;
         position: absolute;
         width: 20%;
@@ -130,6 +130,21 @@
         left: 36%;
         margin-left: 2%;
         top: 0%;
+      }
+
+      .page-title {
+        color: #ffffff;
+        text-align: center;
+        font-family: "Indie Flower";
+        font-size: 3.0em; /*96px*/
+        font-weight: 400;
+        position: absolute;
+        width: 40%;
+        height: 20%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 0%; 
       }
 
     .logout-button {
@@ -150,7 +165,7 @@
         color: #000000;
         text-align: left;
         font-family: 'Inter-Regular', sans-serif;
-        font-size: 24px !important;
+        font-size: 14px !important;
         font-weight: 400;
         position: absolute;
         display: flex;
@@ -175,7 +190,7 @@
         -webkit-text-stroke-color: #000000;
         text-align: left;
         font-family: "Inter-Regular", sans-serif;
-        font-size: 30px !important;
+        font-size: 24px !important;
         font-weight: 400;
         -webkit-text-fill-color: #000000;
     }
@@ -206,4 +221,96 @@
         top: 60%;
         margin-left: -5.0%;
     }
+}
+
+/*Phones in portrait mode*/
+@media (max-width: 600px) {
+    .page-title {
+        color: #ffffff;
+        text-align: center;
+        font-family: "Indie Flower";
+        font-size: 3.0em; /*96px*/
+        font-weight: 400;
+        position: absolute;
+        width: 40%;
+        height: 20%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 25%; 
+      }
+
+    .vocalizer {
+        font-size: 0px;
+    }
+
+    .logout-button {
+        background: #d5cfbf;
+        border-radius: 100px;
+        width: 20%;
+        height: 31.5%;
+        position: absolute;
+        left: 2.3%;
+        top: 32.5%;
+        box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.75);;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logout-button-text {
+        color: #000000;
+        text-align: left;
+        font-family: 'Inter-Regular', sans-serif;
+        font-size: 18px !important;
+        font-weight: 400;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        -webkit-text-stroke: 1px #000000;
+    }
+
+    .feature-button {
+        background: #D5CFBF;
+        border-radius: 50px;
+        border-style: solid;
+        border-color: #000000;
+        border-width: 1px;
+        width: 45%;
+        height: 75%;
+        position: absolute;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        z-index: 1000; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-text-stroke-color: #000000;
+        text-align: center;
+        font-family: "Inter-Regular", sans-serif;
+        font-size: 24px !important;
+        font-weight: 400;
+        -webkit-text-fill-color: #000000;
+    }
+
+    .button-row-1 {
+        width: 80vw;
+        height: 20%;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        top: 28.8%;
+        margin-left: -5.0%;
+      }
+      
+      .button-row-2 {
+        width: 80vw;
+        height: 20%;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        top: 60%;
+        margin-left: -5.0%;
+      }
 }
