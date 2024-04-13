@@ -305,12 +305,19 @@ body {
     object-fit:contain;
     width: 50%;
     height: 70%;
+
   }
 
   .vocalizer {
-    left: 55%; 
+    font-size: 0pt;
+  }
+  .page-title{
+    left: 38%; 
+    top: 30%;
     transform: translateX(-50%);
-    font-size: 5.0em; 
+    font-size: 3.2em; 
+    white-space: nowrap;
+    
   }
 
   .input {
@@ -375,12 +382,14 @@ body {
 
 @media (max-width: 900px) and (orientation: landscape) {
   .vocalizer{
-    font-size: 3.0em;
-    left:50%;
-    top: 15% !important;
+    font-size: 0px;
   }
 
-  
+  .page-title{
+    font-size: 3.5em;
+    left:42%;
+    top: 2% !important;
+  }
   .home-button{
     width:5%;
     
@@ -396,7 +405,7 @@ body {
     width: 90%;
     height: 30%;
     bottom: 100%;
-    top: 45%;
+    top: 43%;
     font-size: 1.0em;
   }
 
@@ -414,6 +423,3 @@ body {
   }
 
 }
-
-
-
