@@ -14,12 +14,16 @@ h1 {
 }
 /* At this point it's aligned decently, will pass over this again*/
 .box {
+    top: 25%;
     align-content: center;
     width: 500px;
     height: 500px;
     background-color: #D6CFBF;
     border: 2px solid black;
-    margin: auto;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
     text-align: center;
 }
 /*Just mostly test stuff to see if buttons work, will be adjusted*/
@@ -47,4 +51,53 @@ label{
     font-size: 25px;
     display: block;
     position: relative;
+}
+
+.header-bar { background: #4e4d49; width: 100%; height: 22.5%; position: absolute; top: 0%; left: 0%; }
+
+.vocalizer {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Indie Flower";
+  font-size: 400%; /*96px*/
+  font-weight: 400;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  right: 2.5%;
+  top: 32.5%;
+}
+
+.page-title {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Indie Flower";
+  font-size: 600%; /*96px*/
+  font-weight: 400;
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 21.5%; 
+}
+
+.logo-box {
+    background: transparent;
+    width: 35%;
+    height: 60%;
+    position: absolute;
+    top: 25%;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 24%; 
+    height: 81%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    object-fit: contain;
+    position: absolute;
 }
