@@ -33,7 +33,7 @@ body { height: 100%; width: 100%; margin: 0; }
   -webkit-text-stroke: 1px #000000;
 }
 
-.home-icon-1 { width: 24%; height: 81%; left: 10%; position: absolute; object-fit: cover; }
+.home-icon-1 { width: 24%; height: 81%; left: 10%; position: absolute; object-fit: contain; }
 
 .vocalizer {
   color: #ffffff;
