@@ -58,7 +58,7 @@ body {
   height: 81%;
   left: 10%;
   position: absolute;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .vocalizer {
@@ -313,17 +313,24 @@ max-width: 40%;
     font-size: 0pt;
   }
   .home-icon-1{
-   left:25%;
-    width: 50%;
-    height: 70%;
-    object-fit:contain;
+    
+      left: 25%;
+      object-fit:contain;
+      width: 50%;
+      height: 70%;
+  
+    
 
+  }
+  .home-button{
+    width: 8%;
+    height: 31%;
   }
   
   .page-title{
     font-size: 3.0em;
    /* left:1%; */
-   left: -33%;
+   left: -42%;
    top: 32.5% !important;
   }
   
