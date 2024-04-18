@@ -186,22 +186,3 @@ handleKeyboardVisibility();
 
 
 
-const synthesis = window.speechSynthesis;
-const newUtterance = new SpeechSynthesisUtterance('Hello');
-let isPlaying = false;
-
-synthesis.speak(newUtterance);
-isPlaying = true;
-
-// somehow chrome stops after 14 seconds, so resume from there
-var synthesisInterval = setInterval(() => {
-    if (!isPlaying) {
-        clearInterval(synthesisInterval);
-    } else {
-        synthesis.resume();
-    } 
-}, 14000);
-
-newUtterance.onend = () => {
-    isPlaying = false;
-}
