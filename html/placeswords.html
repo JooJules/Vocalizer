@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Phrases</title>
+        <script type="text/javascript" src="placeswords.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie Flower"/>
+        <link rel="stylesheet" href="words.css">
+    </head>
+    <body>
+        
+        <!--<div class="title-bar">
+            <h2 id="title">Vocalizer</h2>
+            <a href="./SignLanguageHome.html">
+                <button id="back-button">Back</button>
+            </a>
+        </div> -->
+        <div class="header-bar"> <!-- Home Button-->
+            <a href="./SignLanguageHome.html">
+                <button class="home-button">
+                    <div class="home-button-text">Back</div> <!-- Home Button Text-->
+                </button>
+            </a>
+            <div class="vocalizer">Vocalizer</div>
+            <div class="page-title">Words</div>
+        </div>
+        <div class="nav-bar">
+            <a href="./familywords.html">
+                <button>Family</button>
+            </a>
+            <a href="./placeswords.html">
+                <button>Places</button>
+            </a>
+            <a href="./timewords.html">
+                <button>Time</button>
+            </a>
+            <a href="./feelingwords.html">
+                <button>Feelings</button>
+            </a>
+        </div>
+        <div class="main">
+            <h1 id="word-type">Place words</h1>
+            <div class="words-places">
+                <div id="list" onclick="instruction('home')">Home</div>
+                <div id="list" onclick="instruction('work')">Work</div>
+                <div id="list" onclick="instruction('school')">School</div>
+                <div id="list" onclick="instruction('store')">Store</div>
+                <div id="list" onclick="instruction('car')">Car/Drive</div>
+                <div id="list" onclick="instruction('come')">Come/Go</div>
+                <div id="list" onclick="instruction('in')">In/Out</div>
+                <div id="list" onclick="instruction('with')">With</div>
+            </div>
+            <div id="text-box"></div>
+            <video id="video-box" width="320" height="240" controls>
+                <source id="video" src="goodbyeASL.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </body>
+</html>

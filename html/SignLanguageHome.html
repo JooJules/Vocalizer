@@ -5,26 +5,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign Language</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie Flower"/>
-        <link rel="stylesheet" href="../css/SignLanguageHome.css">
+        <link rel="stylesheet" href="SignLanguageHome.css">
     </head>
     <body>
-        <div class="top-box">
+        <!--<div class="top-box">
             <h2 id="title">Vocalizer</h2>
         </div>
         <div class="home-button">
-            <a href="../index.html">
+            <a href="./HomeScreen.html">
                 <button id="home-button">Home</button>
             </a>
-        </div>
-        <div class="phrases">
-            <a href="./Phrases.html">
-                <button id="phrases-button">Phrases</button>
+        </div> -->
+        <div class="header-bar"> <!-- Home Button-->
+            <a href="../html/HomeScreen.html">
+                <button class="home-button">
+                    <img class="home-icon-1" src="../images/home icon.webp" /> <!-- Home Button Image-->
+                    <div class="home-button-text">Home</div> <!-- Home Button Text-->
+                </button>
             </a>
+            <div class="vocalizer">Vocalizer</div>
+            <div class="page-title">Sign Language</div>
         </div>
-        <div class="finger-spelling">
-            <a href="./FingerSpelling.html">
-                <button id="finger-spelling-button">Finger Spelling</button>
-            </a>
+
+        <div class="flex-box">
+            <div class="phrases">
+                <a href="./Phrases.html">
+                    <button id="phrases-button">Phrases</button>
+                </a>
+            </div>
+            <div class="words">
+                <a href="./familywords.html">
+                    <button id="words-button">Words</button>
+                </a>
+            </div>
+            <div class="finger-spelling">
+                <a href="./FingerSpelling.html">
+                    <button id="finger-spelling-button">Finger Spelling</button>
+                </a>
+            </div>
         </div>
     </body>
 </html>

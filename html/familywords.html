@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Phrases</title>
+        <script type="text/javascript" src="familywords.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie Flower"/>
+        <link rel="stylesheet" href="words.css">
+    </head>
+    <body>
+        <!--
+        <div class="title-bar">
+            <h2 id="title">Vocalizer</h2>
+            <a href="./SignLanguageHome.html">
+                <button id="back-button">Back</button>
+            </a>
+        </div>
+        -->
+        <div class="header-bar"> <!-- Home Button-->
+            <a href="./SignLanguageHome.html">
+                <button class="home-button">
+                    <div class="home-button-text">Back</div> <!-- Home Button Text-->
+                </button>
+            </a>
+            <div class="vocalizer">Vocalizer</div>
+            <div class="page-title">Words</div>
+        </div>
+        <div class="nav-bar">
+            <a href="./familywords.html">
+                <button>Family</button>
+            </a>
+            <a href="./placeswords.html">
+                <button>Places</button>
+            </a>
+            <a href="./timewords.html">
+                <button>Time</button>
+            </a>
+            <a href="./feelingwords.html">
+                <button>Feelings</button>
+            </a>
+        </div>
+        <div class="main">
+            <h1 id="word-type">Family words</h1>
+            <div class="words-family">
+                <div id="list" onclick="instruction('mom')">Mom</div>
+                <div id="list" onclick="instruction('dad')">Dad</div>
+                <div id="list" onclick="instruction('boy')">Boy</div>
+                <div id="list" onclick="instruction('girl')">Girl</div>
+                <div id="list" onclick="instruction('brother')">Brother</div>
+                <div id="list" onclick="instruction('sister')">Sister</div>
+                <div id="list" onclick="instruction('grandma')">Grandma</div>
+                <div id="list" onclick="instruction('grandpa')">Grandpa</div>
+                <div id="list" onclick="instruction('aunt')">Aunt</div>
+                <div id="list" onclick="instruction('uncle')">Uncle</div>
+                <div id="list" onclick="instruction('baby')">Baby</div>
+            </div>
+            <div id="text-box"></div>
+            <video id="video-box" width="320" height="240" controls>
+                <source id="video" src="goodbyeASL.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </body>
+</html>

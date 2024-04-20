@@ -4,21 +4,30 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Phrases</title>
-        <script type="text/javascript" src="../javascript/Phrasesscript.js"></script>
+        <script type="text/javascript" src="Phrasesscript.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie Flower"/>
-        <link rel="stylesheet" href="../css/Phrases.css">
+        <link rel="stylesheet" href="Phrases.css">
     </head>
     <body>
-        <div class="top-box">
+        <!--<div class="top-box">
             <h2 id="title">Vocalizer</h2>
         </div>
         <div class="back-button">
             <a href="./SignLanguageHome.html">
                 <button id="back-button">Back</button>
             </a>
+        </div> -->
+        <div class="header-bar"> <!-- Home Button-->
+            <a href="./SignLanguageHome.html">
+                <button class="home-button">
+                    <div class="home-button-text">Back</div> <!-- Home Button Text-->
+                </button>
+            </a>
+            <div class="vocalizer">Vocalizer</div>
+            <div class="page-title">Phrases</div>
         </div>
-        <div class="Phrases">
-            <h4 id="PhraseTitle">Phrases</h4>
+        <div class="main">
+            <h1 id="PhraseTitle">Phrases</h1>
             <div class="Phrase-list">
                 <div id="list" onclick="instruction('hello')">Hello</div>
                 <div id="list" onclick="instruction('goodbye')">Goodbye</div>
@@ -28,12 +37,12 @@
                 <div id="list" onclick="instruction('excuse me')">Excuse me</div>
                 <div id="list" onclick="instruction('good morning')">Good morning</div>
                 <div id="list" onclick="instruction('good afternoon')">Good afternoon</div>
+            </div>
+            <div id="text-box"></div>
+            <video id="video-box" width="320" height="240" controls>
+                <source id="video" src="goodbyeASL.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
-       </div>
-       <div id="text-box"></div>
-       <video id="video-box" width="320" height="240" controls>
-            <source id="video" src="goodbyeASL.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-       </video>
     </body>
 </html>
