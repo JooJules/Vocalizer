@@ -7,7 +7,7 @@ function instruction(selected) {
     }
     else if (selected == 'night') {
         texttoshow = "To sign the word 'night', start by placing the arm of your non-dominant hand horizontally in front of you. Next, with the finger of your dominant hand pointing down, place the wrist of your dominant hand on top of the wrist of your other hand.";
-        vid.src = "../ASL Videos/timewords/dayASL.mp4";
+        vid.src = "../ASL Videos/timewords/nightASL.mp4";
     }
     else if (selected == 'week') {
         texttoshow = "To sign the word 'week', start by making a fist with your dominant hand while keeping the pointer finger out. Next, move your dominant hand across the palm of your other hand.";
@@ -20,6 +20,14 @@ function instruction(selected) {
     else if (selected == 'year') {
         texttoshow = "To sign the word 'year', start by making two fists. Move the fist of your right hand around the fist of your left hand once and place it on top of your left hand.";
         vid.src = "../ASL Videos/timewords/yearASL.mp4";
+    }
+    else if (selected == 'will') {
+        texttoshow = "To sign the word 'will' or 'future', start by having flat hand with fingers closed pointing towards the ceiling. Next, move your hand down so that it is horizontal. Stretching your arm can mean farther into the future.";
+        vid.src = "../ASL Videos/timewords/willASL.mp4";
+    }
+    else if (selected == 'before') {
+        texttoshow = "To sign the word 'before' or 'past', move your dominant arm up and back until your hand is over your shoulder.";
+        vid.src = "../ASL Videos/timewords/beforeASL.mp4";
     }
     else if (selected == 'today') {
         texttoshow = "To sign the word 'today', close both hands but keep your pinky and thumb outward to form a 'Y' shape. Quickly move both hands shortly downward.";

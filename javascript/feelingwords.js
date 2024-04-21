@@ -11,7 +11,7 @@ function instruction(selected) {
     }
     else if (selected == 'sad') {
         texttoshow = "To sign that you are sad, have your hands in front of your face with fingers apart and palms facing towards you. Have a sad look on your face and move your hands down.";
-        vid.src = "../ASL Videos/feelingwords/sadALS.mp4";
+        vid.src = "../ASL Videos/feelingwords/sadASL.mp4";
     }
     else if (selected == 'like') {
         texttoshow = "To sign the word 'like', have in front of your chest with your fingers spread apart and palm facing towards you. Next, touch your thumb and middle finger together. To sign that you don't like, sign the word like and then move your hand away from you while opening it.";

@@ -49,11 +49,11 @@ body {
   
 .home-button-text { /*css for the home button text*/
     color: #000000;
-    text-align: center;
     font-family: 'Inter-Regular', sans-serif;
     font-size: 40px;
     font-weight: 400;
     position: absolute;
+    right: 20%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -232,4 +232,102 @@ body {
     border-width: 1px;
     height: 350px;
     width: 500px;
+}
+
+@media (max-width: 600px) {  /*css for phone's, specifically in vertical mode. Landscape is at the end */
+    .home-button-text{
+      font-size: 12pt;
+    }
+    .home-icon-1{
+      
+        left: 25%;
+        object-fit:contain;
+        width: 50%;
+        height: 70%;
+    }
+
+    .home-button{
+      width: 8%;
+      height: 31%;
+    }
+    
+    .page-title{
+      font-size: 3.0em;
+     /* left:1%; */
+     left: -42%;
+     top: 32.5% !important;
+    }
+    
+    .vocalizer{
+      font-size: 0pt;
+    }
+  
+    .header-bar{
+        width: 200%;
+        overflow-x: auto;
+    }
+  }
+  
+@media (min-width: 601px) and (max-width: 1024px) {  /*css for screens in between mobile and laptop */
+    .home-button-text{
+      font-size: 12pt;
+    }
+    .home-icon-1{
+     left:25%;
+      width: 50%;
+      height: 70%;
+      object-fit:contain;
+  
+    }
+}
+  
+@media (min-width: 1025px) { /*css for laptop/computer screens*/
+    .home-button-text {
+      color: #000000;
+      text-align: left;
+      font-family: 'Inter-Regular', sans-serif;
+      font-size: 40px;
+      font-weight: 400;
+      left: 45%;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      -webkit-text-stroke: 1px #000000;
+      transform: translate(-10%, 0%);
+    }
+    
+    .home-icon-1 {
+      width: 24%;
+      height: 81%;
+      left: 10%;
+      position: absolute;
+      object-fit:contain;
+      
+    }
+}  
+  
+body {
+    margin: 0;
+    padding: 0;
+   
+    overflow-x: hidden;
+}
+  
+@media (max-width: 1000px) and (orientation: landscape) {  /*css for mobile devices in landscape mode */   
+    .page-title{
+        font-size: 3.0em;
+        left:-45%;
+        top: 15% !important;
+    }
+    .vocalizer{
+        font-size: 0pt;
+    }
+    .header-bar{
+        width: 200%;
+        overflow-x: auto;
+    }
+    .home-button{
+        width:5%;
+    }
 }
